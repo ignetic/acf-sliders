@@ -233,8 +233,9 @@ abstract class WPPress_ACF_Field extends acf_field
 		acf_render_field_setting($field, array(
 			'label' => __('Disabled Slides:', 'acf') ,
 			'type' => 'select',
+//			'name' => 'fields[' . $key . '][disable]',
 			'name' => 'disable',
-			'value' => $field['disable'],
+//			'value' => $field['disable'],
 			'multiple' => '1',
 			'allow_null' => '0',
 			'choices' => $choices,
@@ -243,8 +244,9 @@ abstract class WPPress_ACF_Field extends acf_field
 		acf_render_field_setting($field, array(
 			'label' => __('Allow Null?', 'acf') ,
 			'type' => 'radio',
+//			'name' => 'fields[' . $key . '][allow_null]',
 			'name' => 'allow_null',
-			'value' => $field['allow_null'],
+//			'value' => $field['allow_null'],
 			'choices' => array(
 				1 => __("Yes", 'acf') ,
 				0 => __("No", 'acf') ,
@@ -254,8 +256,9 @@ abstract class WPPress_ACF_Field extends acf_field
 		acf_render_field_setting($field, array(
 			'label' => __('Select Multiple?', 'acf') ,
 			'type' => 'radio',
+//			'name' => 'fields[' . $key . '][multiple]',
 			'name' => 'multiple',
-			'value' => $field['multiple'],
+//			'value' => $field['multiple'],
 			'choices' => array(
 				1 => __("Yes", 'acf') ,
 				0 => __("No", 'acf') ,
@@ -266,8 +269,9 @@ abstract class WPPress_ACF_Field extends acf_field
 			'label' => __('Hide disabled Slides?', 'acf') ,
 			
 			'type' => 'radio',
+//			'name' => 'fields[' . $key . '][hide_disabled]',
 			'name' => 'hide_disabled',
-			'value' => $field['hide_disabled'],
+//			'value' => $field['hide_disabled'],
 			'choices' => array(
 				1 => __("Yes", 'acf') ,
 				0 => __("No", 'acf') ,
